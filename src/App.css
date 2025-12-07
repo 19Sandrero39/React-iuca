@@ -1,21 +1,25 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* === Общий контейнер === */
 .layout {
     display: flex;
     gap: 30px;
+
+    /* Две самые важные строки */
+    max-width: 900px;
+    /* или 1100 — как хочешь */
+    margin: 0 auto;
+    /* центрирует блок */
+
     padding: 25px;
     background: #2b2b2b;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 650px;
-    height: 380px;
-
-    font-family: "Segoe UI", system-ui, sans-serif;
 }
 
 /* === Список танков === */
@@ -96,4 +100,22 @@ button:hover {
 .placeholder {
     font-size: 16px;
     color: #777;
+}
+
+.header {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
 }
